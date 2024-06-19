@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Template</title>
+        <!-- fav icon  -->
+        <link href="./assets/img/fav/favicon.png" rel="icon" type="image/png" sizes="16x16" />
+        <!-- bootstrap css1 js1 -->
+        <link href="./assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- fontawesome css1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- jquery ui css1 js1 -->
+        <link href="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <!-- lightbox2 css1 js1-->
+        <link href="./assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" type="text/css" />
+        <!-- custom css -->
+        <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+        <!-- Start Site Setting -->
+        <div id="sitesettings" class="sitesettings">
+            <div class="sitesettings-item">
+                <a href="javascript:void(0);" id="sitetoggle" class="sitetoggle">
+                    <i class="fas fa-cog ani-rotates"></i>
+                </a>
+            </div>
+        </div>
+        <!-- End Site Setting -->
+
+        <!-- Start Navbar -->
+        <div class="wrappers">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button type="button" class="navbar-toggler ms-auto mb-2" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="nav">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <!-- start left sidebar -->
+                            <div class="col-lg-2 col-md-3 fixed-top vh-100 overflow-auto leftsidebars">
+                                <ul class="navbar-nav flex-column mt-4">
+                                    <li class="nav-item nav-categories">Main</li>
+
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks currents"><i class="fas fa-file me-3"></i> Dashboard</a></li>
+
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#download"><i class="fas fa-download me-3"></i> Download <i class="fas fa-angle-left mores"></i></a>
+                                        <ul id="download" class="collapse">
+                                           <li><a href="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> Education</i></a></li>
+                                           <li><a href="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> Software</i></a></li> 
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#form"><i class="fas fa-download me-3"></i> Form <i class="fas fa-angle-left mores"></i></a>
+                                        <ul id="form" class="collapse">
+                                           <li><a href="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> Att Form</i></a></li>
+                                           <li><a href="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> Leave Form</i></a></li>
+                                           <li><a href="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> Enrolls</i></a></li> 
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks"><i class="fas fa-file me-3"></i> Widgets</a></li>
+
+                                    <li class="nav-item nav-categories">UI Features</li>
+
+                                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link text-white p-3 mb-2 sidebarlinks" data-bs-toggle="collapse" data-bs-target="#articles"><i class="fas fa-download me-3"></i> Articles <i class="fas fa-angle-left mores"></i></a>
+                                        <ul id="articles" class="collapse">
+                                           <li><a href="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> Post</i></a></li>
+                                           <li><a href="javascript:void(0);" class="nav-link text-white sidebarlinks"><i class="fas fa-long-arrow-alt-right me-4"> Announcement</i></a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- end left sidebar -->
+
+                            <!-- start top navbar -->
+                            <div class="col-lg-10 col-md-9  fixed-top ms-auto topnavbars">
+
+                                <div class="row">
+
+                                    <div class="navbar navbar-expand navbar-light bg-white shadow">
+
+                                        <!-- start quick search -->
+                                        <form class="me-auto" action="" method="" >
+                                            <div class="input-group">
+                                                <input type="text" name="quicksearch" id="quicksearch" class="form-control border-0 shadow-none" placeholder="Search Something..." />
+                                                <div class="input-group-append">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quicksearchmodal"><i class="fas fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <!-- end quick search -->
+
+                                        <!-- start notify & user account -->
+                                        <ul class="navbar-nav pe-5 me-5">
+                                            <!-- notify -->
+                                            <li class="nav-item me-3 dropdowns">
+
+                                                <a href="javascript:void(0);" class="nav-link" onclick="dropbtn(event);">
+                                                    <i class="fas fa-bell"></i>
+                                                    <span class="badge bg-danger">5+</span>
+                                                </a>
+
+                                                <div class="dropdown-contents mydropdowns">
+                                                    <h6>Alert Center</h6>
+
+                                                    <a href="javascript:void(0);" class="d-flex">
+                                                        <div class="me-3">
+                                                            <i class="fas fa-file-alt"></i>
+                                                        </div>
+                                                        <div>
+                                                            <p class="small text-muted">21 May 2024</p>
+                                                            <i>A new member created.</i>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="javascript:void(0);" class="d-flex">
+                                                        <div class="me-3">
+                                                            <i class="fas fa-file-alt"></i>
+                                                        </div>
+                                                        <div>
+                                                            <p class="small text-muted">21 May 2024</p>
+                                                            <i>A new member created.</i>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="javascript:void(0);" class="d-flex">
+                                                        <div class="me-3">
+                                                            <i class="fas fa-file-alt"></i>
+                                                        </div>
+                                                        <div>
+                                                            <p class="small text-muted">21 May 2024</p>
+                                                            <i>A new member created.</i>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+
+                                            </li>
+                                            <!-- notify  -->
+
+                                            <!-- message -->
+                                            <!-- message -->
+
+                                            <!-- user account  -->
+                                            <li class="nav-item dropdown">
+                                                <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                                    <span class="text-muted small me-2">Admin</span>
+                                                    <img src="./assets/img/users/user1.jpg" class="rounded-circle" width="25" alt="user1" />
+                                                </a>
+
+                                                <div class="dropdown-menu">
+                                                    <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user text-muted me-2"></i> Profile</a>
+                                                    <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user text-muted me-2"></i> Settings</a>
+                                                    <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user text-muted me-2"></i> Activity Log</a>
+                                                    <a href="javascript:void(0);" class="dropdown-item"><i class="fas fa-user text-muted me-2"></i> Logout</a>
+                                                </div>
+
+                                            </li>
+                                            <!-- user account  -->
+                                        </ul>
+                                        <!-- end notify & user account    -->
+
+                                        <!-- start mobile close btn -->
+                                        <button type="button" class="close-btns" data-bs-toggle="collapse" data-bs-target="#nav">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                        <!-- end mobile close btn -->
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- end top navbar -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <!-- End Navbar -->
+
+        <!-- Start Content Area -->
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 col-md-9 ms-auto">
+
+                        <!-- Start Shortcut Area -->
+
+                        <div class="row pt-md-5 mt-md-3">
+
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <div class="card shadow py-2 border-left-primarys">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col">   
+                                                <h6 class="text-primary text-xs fw-bold text-uppercase mb-1">sales (Monthly)</h6>
+                                                <p class="h5 text-muted">$ 50,000</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-calendar fa-2x text-secondary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <div class="card shadow py-2 border-left-successes">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col">   
+                                                <h6 class="text-primary text-xs fw-bold text-uppercase mb-1">Rental Fee (Annual)</h6>
+                                                <p class="h5 text-muted">$ 400,000</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-dollar-sign fa-2x text-secondary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <div class="card shadow py-2 border-left-infos">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col">   
+                                                <h6 class="text-primary text-xs fw-bold text-uppercase mb-1">Debit Collect</h6>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <p class="h5 text-muted">60%</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="progress" style="height: 13px;">
+                                                            <div class="progress-bar bg-info" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-clipboard-list fa-2x text-secondary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <div class="card shadow py-2 border-left-warnings">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col">   
+                                                <h6 class="text-primary text-xs fw-bold text-uppercase mb-1">Request Message</h6>
+                                                <p class="h5 text-muted">25</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <i class="fas fa-comments fa-2x text-secondary"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- End Shortcut Area -->
+
+                        <!-- Start Carousel Area -->
+                        <div class="row">
+
+                            <div class="col-md-3 col-sm-6 mb-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Sales</h6>
+
+                                        <div id="sales" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner p-3">
+
+                                                <div class="carousel-item active">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 58,664</h3>
+                                                        <h3 class="text-danger">+3.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <div class="carousel-item">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 68,664</h3>
+                                                        <h3 class="text-danger">+2.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <div class="carousel-item">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 78,664</h3>
+                                                        <h3 class="text-danger">+1.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <button type="button" class="carousel-control-prev" data-bs-target="#sales" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+
+                                                <button type="button" class="carousel-control-next" data-bs-target="#sales" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Purchases</h6>
+
+                                        <div id="purchases" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner p-3">
+
+                                                <div class="carousel-item active">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 58,664</h3>
+                                                        <h3 class="text-danger">+3.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <div class="carousel-item">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 68,664</h3>
+                                                        <h3 class="text-danger">+2.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <div class="carousel-item">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 78,664</h3>
+                                                        <h3 class="text-danger">+1.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <button type="button" class="carousel-control-prev" data-bs-target="#purchases" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+
+                                                <button type="button" class="carousel-control-next" data-bs-target="#purchases" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Returns</h6>
+
+                                        <div id="returns" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner p-3">
+
+                                                <div class="carousel-item active">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 58,664</h3>
+                                                        <h3 class="text-danger">+3.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <div class="carousel-item">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 68,664</h3>
+                                                        <h3 class="text-danger">+2.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <div class="carousel-item">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 78,664</h3>
+                                                        <h3 class="text-danger">+1.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <button type="button" class="carousel-control-prev" data-bs-target="#returns" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+
+                                                <button type="button" class="carousel-control-next" data-bs-target="#returns" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 mb-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Marketing</h6>
+
+                                        <div id="marketing" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner p-3">
+
+                                                <div class="carousel-item active">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 58,664</h3>
+                                                        <h3 class="text-danger">+3.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <div class="carousel-item">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 68,664</h3>
+                                                        <h3 class="text-danger">+2.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <div class="carousel-item">
+
+                                                    <div class="d-flex">
+                                                        <h3 class="me-3">$ 78,664</h3>
+                                                        <h3 class="text-danger">+1.2%</h3>
+                                                    </div>
+
+                                                    <div>
+                                                        <p class="fw-bold text-small">Revenue <span class="text-muted">($1572M last month)</span></p>
+                                                    </div>
+    
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm">
+                                                        <i class="fas fa-calendar-alt me-1"></i> Jan
+                                                    </button>
+
+                                                </div>
+
+                                                <button type="button" class="carousel-control-prev" data-bs-target="#marketing" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+
+                                                <button type="button" class="carousel-control-next" data-bs-target="#marketing" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Carousel Area -->
+
+                        <!-- Start Gauge Area  -->
+                        <div class="row">
+
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <div class="card shadow py-2 border-left-primarys">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <h6 class="text-xs fw-bold text-primary text-uppercase mb-1">Users</h6>
+                                            </div>
+                                            <div class="col-auto">
+                                                <p class="h6 text-muted">Report</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <div id="gaugeusers"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <div class="card shadow py-2 border-left-successes">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <h6 class="text-xs fw-bold text-primary text-uppercase mb-1">Curtomers</h6>
+                                            </div>
+                                            <div class="col-auto">
+                                                <p class="h6 text-muted">Report</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <div id="gaugecustomers"></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <div class="card shadow py-2 border-left-infos">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <h6 class="text-xs fw-bold text-primary text-uppercase mb-1">Employees</h6>
+                                            </div>
+                                            <div class="col-auto">
+                                                <p class="h6 text-muted">Report</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <div id="gaugeemployees"></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 mb-2">
+                                <div class="card shadow py-2 border-left-warnings">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <h6 class="text-xs fw-bold text-primary text-uppercase mb-1">Invester</h6>
+                                            </div>
+                                            <div class="col-auto">
+                                                <p class="h6 text-muted">Report</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <div id="gaugeinvesters"></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Gauge Area  -->
+
+                        <!-- Start Expenses Area -->
+                        <div class="row">
+
+                            <div class="col-md-7 mb-3">
+                                <div class="card shadow">
+                                    <div class="card-header">
+                                        <h6 class="text-primary">Expenses</h6>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <h6 class="small">Other Expenses 20%</h6>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-danger" style="width:20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+
+                                        <h6 class="small">Sales Tracking 40%</h6>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-warning" style="width:20%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+
+                                        <h6 class="small">Rental Fee 60%</h6>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-primary" style="width:20%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+
+                                        <h6 class="small">Salary 80%</h6>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-info" style="width:20%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+
+                                        <h6 class="small">Fixture 100%</h6>
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-success" style="width:20%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="card shadow">
+                                    <div class="card-header">
+                                        <h6 class="text-primary">Revenue Sources</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div style="height: 250px;display: flex;justify-content: center;align-items: center;">
+                                            <canvas id="myChart"></canvas>
+                                        </div>
+                                        <div class="small text-center mt-2">
+                                            <span><i class="fas fa-circle text-warning"></i> Return Item</span>
+                                            <span class="mx-2"><i class="fas fa-circle text-primary"></i> Direct Sales</span>
+                                            <span><i class="fas fa-circle text-danger"></i> Online Sales</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Expenses Area -->
+
+
+                        <!-- Start Earning Area  -->
+                        <div class="row">
+
+                            <div class="col-md-8 mb-3">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <h6 class="card-title">Earnings Overview</h6>
+                                        <div class="dropdown">
+                                                <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+
+                                                <div class="dropdown-menu shadow">
+                                                    <div class="dropdown-header">Quick Action</div>
+                                                    <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                                    <a href="javascript:void(0);" class="dropdown-item">Edit</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="javascript:void(0);" class="dropdown-item">View Report</a>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="curve_chart" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Regional Team</h6>
+
+                                        <div class="d-flex align-items-center border-bottom py-2">
+                                            <img src="./assets/img/users/user1.jpg" class="rounded-circle" width="40" alt="user1" />
+                                            <div class="ms-3">
+                                                <h6 class="mb-1">Ms.July</h6>
+                                                <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>  Mandalay City, Myanmar.</small>
+                                            </div>
+                                            <div class="badge bg-success p-1 ms-auto">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center border-bottom py-2">
+                                            <img src="./assets/img/users/user2.jpg" class="rounded-circle" width="40" alt="user2" />
+                                            <div class="ms-3">
+                                                <h6 class="mb-1">Mr.Anton</h6>
+                                                <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>  Mandalay City, Myanmar.</small>
+                                            </div>
+                                            <div class="badge bg-success p-1 ms-auto">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex align-items-center py-2">
+                                            <img src="./assets/img/users/user3.jpg" class="rounded-circle" width="40" alt="user3" />
+                                            <div class="ms-3">
+                                                <h6 class="mb-1">Ms.Yoon</h6>
+                                                <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>  Mandalay City, Myanmar.</small>
+                                            </div>
+                                            <div class="badge bg-success p-1 ms-auto">
+                                                <i class="fas fa-plus"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <!-- End Earning Area  -->
+
+
+                        <!-- Start Result Area  -->
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-users fa-2x text-primary me-4"></i>
+                                                    <div class="text-center">
+                                                        <p class="mb-0">Users</p>
+                                                        <h5 class="fw-bold">56,320</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-check-circle fa-2x text-primary me-4"></i>
+                                                    <div class="text-center">
+                                                        <p class="mb-0">Feedbacks</p>
+                                                        <h5 class="fw-bold">3,200</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-trophy fa-2x text-primary me-4"></i>
+                                                    <div class="text-center">
+                                                        <p class="mb-0">Employees</p>
+                                                        <h5 class="fw-bold">16,00</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-star fa-2x text-primary me-4"></i>
+                                                    <div class="text-center">
+                                                        <p class="mb-0">Sales</p>
+                                                        <h5 class="fw-bold">12,860</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Result Area  -->
+
+                        <!-- Start Analysis Area  -->
+                        <div class="row">
+
+                            <div class="col-md-4 mb-3">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <h6>Sale Analysis Trend</h6>
+
+                                        <div class="mt-2">
+                                            <div class="d-flex justify-content-between">
+                                                <small>Order Value</small>
+                                                <small>120.8%</small>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-secondary" style="width: 80%;" aria-valuenow="80" arai-valuemin="0" arai-valuemax="100"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-2">
+                                            <div class="d-flex justify-content-between">
+                                                <small>Total Products</small>
+                                                <small>325.2%</small>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" style="width: 50%;" aria-valuenow="50" arai-valuemin="0" arai-valuemax="100"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-2">
+                                            <div class="d-flex justify-content-between">
+                                                <small>Quantity</small>
+                                                <small>25.60%</small>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" style="width: 70%;" aria-valuenow="70" arai-valuemin="0" arai-valuemax="100"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 mb-3">
+                                <div class="card shadow">
+                                    <div class="card-body">
+                                        <h6>Project Status</h6>
+
+                                        <div>
+                                            <table class="table">
+
+                                                <tr>
+                                                    <td>
+                                                       <div class="d-flex">
+                                                            <img src="./assets/img/clients/client1.png" class="me-3" width="100" alt="client1" />
+                                                            <div>
+                                                                <small>Company</small>
+                                                                <p class="fw-bold mt-1">Sony Electronic</p>
+                                                            </div>
+                                                        </div> 
+                                                    </td>
+                                                    <td>
+                                                        Sales
+                                                        <p class="fw-bold mt-1">$3250</p>
+                                                    </td>
+                                                    <td>
+                                                        Status
+                                                        <p class="fw-bold text-success mt-1">88%</p>
+                                                    </td>
+                                                    <td>
+                                                        Deadline
+                                                        <p class="fw-bold mt-1">10 June 2023</p>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-sm btn-secondary rounded-0"><i class="fas fa-pen"></i> edit</button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                       <div class="d-flex">
+                                                            <img src="./assets/img/clients/client2.png" class="me-3" width="100" alt="client2" />
+                                                            <div>
+                                                                <small>Company</small>
+                                                                <p class="fw-bold mt-1">Mi Electronic</p>
+                                                            </div>
+                                                        </div> 
+                                                    </td>
+                                                    <td>
+                                                        Sales
+                                                        <p class="fw-bold mt-1">$3250</p>
+                                                    </td>
+                                                    <td>
+                                                        Status
+                                                        <p class="fw-bold text-success mt-1">88%</p>
+                                                    </td>
+                                                    <td>
+                                                        Deadline
+                                                        <p class="fw-bold mt-1">10 June 2023</p>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-sm btn-secondary rounded-0"><i class="fas fa-pen"></i> edit</button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                       <div class="d-flex">
+                                                            <img src="./assets/img/clients/client3.png" class="me-3" width="100" alt="client3" />
+                                                            <div>
+                                                                <small>Company</small>
+                                                                <p class="fw-bold mt-1">Vivo Electronic</p>
+                                                            </div>
+                                                        </div> 
+                                                    </td>
+                                                    <td>
+                                                        Sales
+                                                        <p class="fw-bold mt-1">$3250</p>
+                                                    </td>
+                                                    <td>
+                                                        Status
+                                                        <p class="fw-bold text-success mt-1">88%</p>
+                                                    </td>
+                                                    <td>
+                                                        Deadline
+                                                        <p class="fw-bold mt-1">10 June 2023</p>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-sm btn-secondary rounded-0"><i class="fas fa-pen"></i> edit</button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                       <div class="d-flex">
+                                                            <img src="./assets/img/clients/client4.png" class="me-3" width="100" alt="client4" />
+                                                            <div>
+                                                                <small>Company</small>
+                                                                <p class="fw-bold mt-1">Oppo Electronic</p>
+                                                            </div>
+                                                        </div> 
+                                                    </td>
+                                                    <td>
+                                                        Sales
+                                                        <p class="fw-bold mt-1">$3250</p>
+                                                    </td>
+                                                    <td>
+                                                        Status
+                                                        <p class="fw-bold text-success mt-1">88%</p>
+                                                    </td>
+                                                    <td>
+                                                        Deadline
+                                                        <p class="fw-bold mt-1">10 June 2023</p>
+                                                    </td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-sm btn-secondary rounded-0"><i class="fas fa-pen"></i> edit</button>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- End Analysis Area  -->
+
+                        <!-- Start Todo Area -->
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="card">
+
+                                    <div class="card-body">
+
+                                        <div class="d-flex justify-content-between">
+                                            <h6 class="card-title">Todo List</h6>
+                                            <div class="dropdown">
+                                                <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+
+                                                <div class="dropdown-menu shadow">
+                                                    <a href="javascript:void(0);" class="dropdown-item">Action</a>
+                                                    <a href="javascript:void(0);" class="dropdown-item">Another Action</a>
+                                                    <a href="javascript:void(0);" class="dropdown-item">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group mt-3">
+                                            <input type="text" class="form-control form-control-sm" placeholder="Add list here..." />
+                                            <button type="button" class="btn btn-primary btn-sm form-group-text">Add to list</button>
+                                        </div>
+
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                        <ul class="list-unstyled">
+                                            <li class="d-flex justify-content-between">
+                                                <label>
+                                                    <input type="checkbox" class="checkbox" /> <span class="ms-2"> when an unknown printer took a galley of type.</span>
+                                                </label>
+                                                <i class="fas fa-trash-alt text-muted"></i>
+                                            </li>
+
+                                            <li class="d-flex justify-content-between">
+                                                <label>
+                                                    <input type="checkbox" class="checkbox" /> <span class="ms-2"> when an unknown printer took a galley of type.</span>
+                                                </label>
+                                                <i class="fas fa-trash-alt text-muted"></i>
+                                            </li>
+
+                                            <li class="d-flex justify-content-between">
+                                                <label>
+                                                    <input type="checkbox" class="checkbox" /> <span class="ms-2"> when an unknown printer took a galley of type.</span>
+                                                </label>
+                                                <i class="fas fa-trash-alt text-muted"></i>
+                                            </li>
+
+                                            <li class="d-flex justify-content-between">
+                                                <label>
+                                                    <input type="checkbox" class="checkbox" /> <span class="ms-2"> when an unknown printer took a galley of type.</span>
+                                                </label>
+                                                <i class="fas fa-trash-alt text-muted"></i>
+                                            </li>
+
+                                            <li class="d-flex justify-content-between">
+                                                <label>
+                                                    <input type="checkbox" class="checkbox" /> <span class="ms-2"> when an unknown printer took a galley of type.</span>
+                                                </label>
+                                                <i class="fas fa-trash-alt text-muted"></i>
+                                            </li>
+
+                                            <li class="d-flex justify-content-between">
+                                                <label>
+                                                    <input type="checkbox" class="checkbox" /> <span class="ms-2"> when an unknown printer took a galley of type.</span>
+                                                </label>
+                                                <i class="fas fa-trash-alt text-muted"></i>
+                                            </li>
+
+                                            <li class="d-flex justify-content-between">
+                                                <label>
+                                                    <input type="checkbox" class="checkbox" /> <span class="ms-2"> when an unknown printer took a galley of type.</span>
+                                                </label>
+                                                <i class="fas fa-trash-alt text-muted"></i>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="card shadow">
+                                    <div class="card-header">
+                                       <h6 class="card-title text-primary m-0">Illustrations</h6> 
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <img src="./assets/img/etc/studentgroup.png" class="" width="150" alt="student group" />
+                                        </div>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
+                                        <a href="javascript:void(0);">Browse Illustrations on more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Todo Area -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Content Area -->
+
+        
+
+        <!-- Start Footer Section -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 col-md-9 ms-auto">
+                        <div class="row border-top pt-3 mt-3">
+                            <div class="col-md-6 text-center">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item me-2">
+                                        <a href="javascript:void(0);">Data Land Technology Co.,Ltd</a>
+                                    </li>
+                                    <li class="list-inline-item me-2">
+                                        <a href="javascript:void(0);">About</a>
+                                    </li>
+                                    <li class="list-inline-item me-2">
+                                        <a href="javascript:void(0);">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <p>&copy; <span id="getyear">2000</span> Copyright. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer Section -->
+
+        <!-- Start Right Navbar -->
+        <div class="right-panels">
+            <h6>Custom your template</h6>
+            <p class="small">Hifi!! here you can change your theme</p>
+            <hr/>
+            <div class="themecolors">
+                <a href="javascript:void(0);"><i class="fas fa-square text-primary shadow fa-lg"></i></a>
+                <a href="javascript:void(0);"><i class="fas fa-square text-secondary shadow fa-lg"></i></a>
+                <a href="javascript:void(0);"><i class="fas fa-square text-info shadow fa-lg"></i></a>
+                <a href="javascript:void(0);"><i class="fas fa-square text-success shadow fa-lg"></i></a>
+                <a href="javascript:void(0);"><i class="fas fa-square text-warning shadow fa-lg"></i></a>
+                <a href="javascript:void(0);"><i class="fas fa-square text-danger shadow fa-lg"></i></a>
+                <a href="javascript:void(0);"><i class="fas fa-square text-muted shadow fa-lg"></i></a>
+                <a href="javascript:void(0);"><i class="fas fa-square text-white shadow fa-lg"></i></a>
+                <a href="javascript:void(0);"><i class="fas fa-square text-dark shadow fa-lg"></i></a>
+                <a href="javascript:void(0);"><i class="fas fa-square text-light shadow fa-lg"></i></a>
+            </div>
+        </div>
+        <!-- End Right Navbar -->
+
+
+        <!-- START MODAL AREA  -->
+        <div id="quicksearchmodal" class="modal fade">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h6 class="modal-title">Result</h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="javascript:void(0);">WDF 1001</a></li>
+                            <li class="list-group-item"><a href="javascript:void(0);">WDF 1002</a></li>
+                            <li class="list-group-item"><a href="javascript:void(0);">WDF 1003</a></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL AREA  -->
+    
+
+
+        <!-- bootstrap css1 js1 -->
+        <script src="./assets/libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <!-- jquery js1-->
+        <script src="./assets/libs/jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
+        <!-- jquery ui css1 js1 -->
+        <script src="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.js" type="text/javascript"></script>
+        <!-- google chart js1 -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <!-- chartjs js1 -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Raphael must be included before justgage -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+        <!-- lightbox2 css1 js1-->
+        <script src="./assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js" type="text/javascript"></script>
+        <!-- custom js  -->
+        <script src="./js/app.js" type="text/javascript"></script>
+
+    </body>
+</html>
+
+
+
+
+
+
+<!-- 30FN  -->
